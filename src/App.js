@@ -5,6 +5,7 @@ import Weather from './Weather'
 import Stocks from './Stocks'
 import TodoList from './TodoList'
 import Breweries from './Breweries'
+import Quotes from './Quotes'
 
 
 
@@ -24,8 +25,12 @@ function App() {
         
       </header>  
        
-      <div className="Quote-dash">``
-        <h3> Quote of the Day</h3>
+      <div className="Quote-dash">
+        <h2> My Quotes </h2>
+        <blockquote className="Quote">
+          It is what it is
+        </blockquote>
+       
        
       </div>
       

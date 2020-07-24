@@ -1,28 +1,168 @@
 .App {
-  text-align: center;
+  margin: 0;
+  display:grid;
+  grid-template-areas: 
+  'header header header header'
+  'side quote quote quote'
+  'side main main main'
+  'side lower lower lower'; 
+   grid-gap: 2px;
+  
+  
 }
+
+.App-header {grid-area: header;}
+.Quote-dash {grid-area: quote;}
+.Side-dash {grid-area:side;}
+.Main-dash {grid-area: main;}
+.Lower-dash {grid-area: lower;}
+
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+    height:150px;
+    display: flex;
+    color: white;    
+    align-items: center; 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+img {
+   height: 150px;
+ }
+
+.Banner {
+  text-shadow: 4px 4px 5px #000000;
+  font-size: 50px;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  height: 150px;
+  background-color: #57585c;   
+ 
+}
+
+.Quote-dash {
+  display: flex;
+  justify-content: center;
+  height: 75px;  
+  border: 2px solid green;
+  
+}
+button {
+  height: 50px;
+  width: 75px;
+}
+
+
+
+
+
+
+
+.Side-dash {
+  height:100%;
+  background-image: url("https://images.pexels.com/photos/53594/blue-clouds-day-fluffy-53594.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border: 2px solid black;
+  margin-bottom: 0;  
+  opacity: 0.8;
+  
+ }
+
+.My-Weather {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #333;
+  height:250px;
+  width: 250px;
+  margin:5px;
+  box-shadow: 5px 10px #888888;
+  margin: 20px;
+  font-size: 1.0em;
+  font-weight: bold;
 }
+temp {
+  font-size: .9em;
+}
+
+.My-Calendar {
+  display:flex ;
+  flex-direction: column;
+  align-items: center;
+ height: 400px;
+ width: 275px;
+ border: 2px solid black;
+ box-shadow: 5px 10px #888888;
+}
+
+
+.Main-dash {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  
+  
+}
+
+.Main-dash div {
+  height:400px;
+  width: 325px;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.5em;
+}
+
+.item1 {
+  color: #333 ;
+  background-image: url("https://images.pexels.com/photos/131979/pexels-photo-131979.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+}
+
+.item2 {
+
+background-image: url("https://images.pexels.com/photos/1267684/pexels-photo-1267684.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+  opacity: .9;
+  font-weight: bold;
+  overflow: scroll;
+  color: #333 ;
+}
+
+.Item3 {
+  color:#f2eee9;
+  background-image: url("https://images.pexels.com/photos/210607/pexels-photo-210607.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+}
+
+.Todo {
+  font-weight: 500;
+}
+.Lower-dash {
+display: flex;
+flex: row;
+justify-content: space-evenly;
+
+}
+
+.Lower-dash div {
+  
+}
+
+.Img-dash {
+  height: 170px;
+  border: 2px solid #333;
+  box-shadow: 2px 2px 3px  #888888;
+}
+form {
+   
+  box-shadow: 2px 4px #888888;
+}
+
+
+
+
 
 .App-link {
   color: #61dafb;
